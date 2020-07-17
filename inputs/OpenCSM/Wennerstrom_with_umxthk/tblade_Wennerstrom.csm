@@ -21,3 +21,11 @@ UDPARG    tblade    ncp             33
 #UDPARG    tblade    arg_2           $v0
 UDPRIM    tblade    filename        $$/3dbgbinput.1.dat \
                     auxname         $$/spancontrolinputs.1.dat
+
+#dump ../ESPfull_6_4_3_hot.step
+
+dump ../Wennerstrom_with_umxthk.step
+dump ../Wennerstrom_with_umxthk.stl
+dump ../Wennerstrom_with_umxthk.iges
+
+END
