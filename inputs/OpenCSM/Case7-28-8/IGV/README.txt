@@ -1,3 +1,7 @@
+CASE SPECIFIC INFORMATION
+
+This is an inlet guide vane (IGV) for the 7-28-8 case. This case is in row 1, which contains 20 blades. This geometry contains one IGV blade and no hubwedge. 
+
 PREREQUISITES
 
 1) gcc/gfortran 6.0 or above
@@ -17,6 +21,9 @@ SOURCE CODE AND INSTALLATION
 4) Refer to the ESP README file available with the source code and the document
    T-Blade3_ReadMe_ESP.txt available with the T-Blade3 source code to set up
    ESP with T-Blade3
+   or
+   Refer to the document T-Blade3_ESP_Integration.zip and the file within it,
+   ESP_T-Blade3_build.txt, for instructions on integrating T-Blade3 with ESP
 
 The user is strongly advised to read the documentation attached to both codes
 to understand their operation.
@@ -27,3 +34,7 @@ RUNNING CASE
    /path/to/executable/.tblade3 /path/to/file/3dbgbinput.1.dat
 2) To run with ESP:
    /path/to/executable/.serveCSM /path/to/file/tblade_IGV.csm
+   
+CHANGING PARAMETERS 
+To change additional parameters in the blade geometry, locate the 
+parameter with "tblade" in the second column and uncomment it. 
