@@ -90,6 +90,9 @@ UDPRIM    tblade      filename          $$/3dbgbinput.2.dat \
                       auxname           $$/spancontrolinputs.2.dat
 #UNION
 #FILLET 1 0
-dump ../NACA_thickness_blade.step
+
+dump ../NACA_thickness_derivative.step
+dump ../NACA_thickness_derivative.stl
+dump ../NACA_thickness_derivative.iges
 
 end
