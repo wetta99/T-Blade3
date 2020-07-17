@@ -92,4 +92,8 @@ UDPRIM    tblade      filename          $$/3dbgbinput.1.dat \
 #FILLET 1 0
 #dump ../NACA_thickness_blade.step
 
+dump ../Case7-28-8_IGV.step
+dump ../Case7-28-8_IGV.stl
+dump ../Case7-28-8_IGV.iges
+
 end
