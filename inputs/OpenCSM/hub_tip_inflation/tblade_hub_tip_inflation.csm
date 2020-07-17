@@ -107,6 +107,10 @@ UDPARG      hubwedge    tip_inf_offset          tip_inf_offset
 UDPRIM      hubwedge    filename                $$/3dbgbinput.2.dat \
                         auxname                 $$/spancontrolinputs.2.dat
 
+CYLINDER -100.0 0.00 0.00 1000.0 0.00 0.00 12.7
+ROTATEX   90	0	 0
+SUBTRACT
+
 UDPARG      tblade      ncp                     33
 #UDPARG      tblade      cur1                    cur1
 #UDPARG      tblade      cur2                    cur2
@@ -145,11 +149,11 @@ UDPRIM      tblade      filename                $$/3dbgbinput.2.dat \
                         auxname                 $$/spancontrolinputs.2.dat
 
 #UNION
-#
-#CYLINDER -100.0 0.00 0.00 1000.0 0.00 0.00 12.7
-#SUBTRACT
 
 #dump /ESPfull_6_4_3_hot.step
-#dump ../ESPfull_6_4_3_hot.stl
+
+dump ../hub_tip_inflation.step
+dump ../hub_tip_inflation.stl
+dump ../hub_tip_inflation.iges
 
 end
